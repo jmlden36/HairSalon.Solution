@@ -1,0 +1,8 @@
+@model HairSalon.Models.Stylist
+
+<h2>Are you sure you want to remove @Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName) from the roster?"</h2>
+
+{
+  <input type="submit" value="Delete" />
+}
+@Html.ActionLink("Back to list", "Index")
