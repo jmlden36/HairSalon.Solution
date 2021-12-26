@@ -2,6 +2,8 @@
 
 <h2>Are you sure you want to remove @Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName) from the roster?"</h2>
 
+@Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName)
+@using (Html.BeginForm())
 {
   <input type="submit" value="Delete" />
 }

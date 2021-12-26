@@ -4,10 +4,13 @@
 
 @using (Html.BeginForm())
 {
-  @Html.HiddenFor(model => model.StylistId);
+  @Html.HiddenFor(model => model.StylistId)
   @Html.LabelFor(model => model.StylistName)
+  @Html.EditorFor(model => model.StylistName)
   @Html.LabelFor(model => model.Specialty)
+  @Html.EditorFor(model => model.Specialty)
   @Html.LabelFor(model => model.DateHired)
+  @Html.EditorFor(model => model.DateHired)
   <input type="submit" value="Save" />
 }
 
