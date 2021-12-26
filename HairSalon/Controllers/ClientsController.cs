@@ -17,12 +17,15 @@ namespace HairSalon.Controllers
 
     public ActionResult Index()
     {
+      List<Stylist> stylists = _db.Stylists.ToList();
+      ViewData.Add("stylists", stylists);
       List<Client> model = _db.Clients.Include(client => client.Stylist).ToList();
       return View(model);
     }
 
     public ActionResult Create(int id)
     {
+      
       ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "StylistName");
       return View();
     }
@@ -34,6 +37,8 @@ namespace HairSalon.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
+
+
   }
   
 }
