@@ -2,7 +2,7 @@
 
 #### By: _*Matt Luker*_
 
-#### _A website to load new stylists to the salon roster and add clients._
+#### _A website to load new stylists to the salon roster and add clients for a stylist._
 
 ## Technologies Used
 * C#
