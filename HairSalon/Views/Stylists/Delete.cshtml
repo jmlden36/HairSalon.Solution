@@ -1,6 +1,10 @@
 @model HairSalon.Models.Stylist
 
-<h2>Are you sure you want to remove @Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName) from the roster?"</h2>
+@{
+  Layout = "_Layout";
+}
+
+<h2>Are you sure you want to remove @Html.DisplayFor(model => model.StylistName) from the roster?"</h2>
 
 @Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName)
 @using (Html.BeginForm())
