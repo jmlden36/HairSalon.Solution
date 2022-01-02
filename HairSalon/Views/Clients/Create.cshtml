@@ -2,21 +2,35 @@
   Layout = "_Layout";
 }
 
+@using HairSalon.Models;
 @model HairSalon.Models.Client
+
+@{
+  List<Stylist> stylists = ViewData["stylists"] as List<Stylist>;
+}
 
 <h4>Add a new client</h4>
 
-@using (Html.BeginForm())
+@if (stylists.Count == 0)
 {
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
-  @Html.LabelFor(model => model.Phone)
-  @Html.TextBoxFor(model => model.Phone)
-
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
-
-  <input type="submit" value="Add new client" class="btn btn-default" />
+  <h3>You need to add a stylist before you can add any clients</h3>
 }
+
+else
+{
+  @using (Html.BeginForm())
+  {
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+    @Html.LabelFor(model => model.Phone)
+    @Html.TextBoxFor(model => model.Phone)
+
+    @Html.LabelFor(model => model.Stylist)
+    @Html.DropDownList("StylistId")
+
+    <input type="submit" value="Add new client" class="btn btn-default" />
+  } 
+}
+
 
 <p >@Html.ActionLink("Show all clients", "Index")</p>
