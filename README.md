@@ -26,7 +26,7 @@ _A website where users can add stylists with their name, specialty and date they
 ## Setup/Installation Instructions
 * Open the terminal on your desktop
 * Once in the terminal, use it to navigate to your desktop folder
-* Once inside your desktop folder, use the command https://github.com/jmlden36/HairSalon.Solution.git
+* Once inside your desktop folder, use the command `git clone https://github.com/jmlden36/HairSalon.Solution.git`
 * After cloning the project, navigate into it using the command `cd HairSalon.Solution/HairSalon`
 * Create a file named "appsettings.json" in the `HairSalon` directory
 * Add the following code to appsettings.json and add your MySQL user ID and password:
@@ -37,6 +37,7 @@ _A website where users can add stylists with their name, specialty and date they
   }
 }
 ```
+* Please use your personal MySQL user ID where it says "[YOUR MYSQL USER ID] and use your personal password where it says [YOUR PASSWORD].  Do not include the square brackets.
 * Open MySQL Workbench and log into your server
 * Find the "Navigator" panel and select the "Administration" tab
 * Click on "Data Import/Restore"
@@ -52,7 +53,11 @@ _A website where users can add stylists with their name, specialty and date they
 ## Known Bugs
 * _No known bugs_
 
+## Contact Information
+
+* _If you have any issues or notice any bugs please email [jamesmattluker@gmail.com](mailto:jamesmattluker@gmail.com)._
+
 ## License
 _MIT License: https://opensource.org/licenses/MIT_
 
-Copyright (c) _2021_ _Matt Luker_
+Copyright (c) _2022_ _Matt Luker_
