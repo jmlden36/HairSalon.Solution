@@ -50,7 +50,7 @@ _A website where users can add stylists with their name, specialty and date they
 * Then run the command `dotnet restore` to install project dependencies
 * Then run the command `dotnet run` to run the project in the browser
 * You will then command click on localhost:5000 in the terminal to open the project in your web browser
-* Once on the webpage you can create stylists and clients and have create, read, destroy functionality for both stylists and clients.
+* Once on the webpage you can create stylists and clients and have create, read, update, and destroy functionality for both stylists and clients.
 
 ## Known Bugs
 * _No known bugs_
