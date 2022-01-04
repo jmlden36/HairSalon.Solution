@@ -13,6 +13,7 @@
 * git
 * GitHub
 * MySql
+* Entity Framework
 
 ## Description
 _A website where users can add stylists with their name, specialty and date they were hired. After you add a stylist you can add clients for each stylist as they get them.  You can also edit and delete both stylists and clients.  Built with full CRUD functionality.  Below is an image of the project schema._
